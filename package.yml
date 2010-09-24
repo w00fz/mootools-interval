@@ -1,0 +1,17 @@
+name: "Interval"
+
+exports: "interval.js"
+
+web: "[djamil.it](http://djamil.it)"
+
+description: "A setTimeout wrapper that can pause and resume, with multi functions support."
+
+license: "[MIT License](LICENSE)"
+
+copyright: "&copy; [Djamil Legato](http://djamil.it/)"
+
+author: "w00fz"
+authors: "[Djamil Legato](http://djamil.it)"
+
+sources:
+    - "Source/Interval.js"
