@@ -34,24 +34,24 @@ How To Use
 
 ### Options
 
-* delay		- (*number*: defaults to 500) The delay to wait before running the function(s).
-* repeat	- (*boolean*: defaults to false) Wheter the interval has to loop or not.
+* __delay__		- (*number*: defaults to 500) The delay to wait before running the function(s).
+* __repeat__	- (*boolean*: defaults to false) Wheter the interval has to loop or not.
 
 ### Events
 
-* start		- (*function*) The function to execute when the interval begins.
-* cancel	- (*function*) The function to execute when you manually stop the interval.
-* pause		- (*function*) The function to execute when the interval is paused.
-* resume	- (*function*) The function to execute when the interval is resumed.
-* complete	- (*function*) The function to execute after the interval has processed.
+* __start__		- (*function*) The function to execute when the interval begins.
+* __cancel__	- (*function*) The function to execute when you manually stop the interval.
+* __pause__		- (*function*) The function to execute when the interval is paused.
+* __resume__	- (*function*) The function to execute when the interval is resumed.
+* __complete__	- (*function*) The function to execute after the interval has processed.
 
 ### Methods
 
-* timer.run(args, bind)				- Instantly runs the function(s). The interval won't be stopped. None of the events will be fired.
-* timer.start(args, delay, bind)	- Starts or, if already running, Restarts a timeout based on the options or the delay passed, after which the function(s) gets called.
-* timer.pause()						- Pauses the previously started timeout. 
-* timer.resume()					- Resumes the previously started timeout. Resume will continue from when it has been paused.
-* timer.cancel()					- Cancels the previously started timeout, even if paused. The function(s) will never get called.
+* __timer.run(args, bind)__				- Instantly runs the function(s). The interval won't be stopped. None of the events will be fired.
+* __timer.start(args, delay, bind)__	- Starts or, if already running, Restarts a timeout based on the options or the delay passed, after which the function(s) gets called.
+* __timer.pause()__						- Pauses the previously started timeout. 
+* __timer.resume()__					- Resumes the previously started timeout. Resume will continue from when it has been paused.
+* __timer.cancel()__					- Cancels the previously started timeout, even if paused. The function(s) will never get called.
 
 
 ### Examples
@@ -62,9 +62,9 @@ How To Use
 	
 	var fns = [
 		function(){ console.log('1st'); },
-		function(){ console.log('2st'); },
-		function(){ console.log('3st'); },
-		function(){ console.log('4st'); }
+		function(){ console.log('2nd'); },
+		function(){ console.log('3rd'); },
+		function(){ console.log('4th'); }
 	];
 	
 	var timer = new Interval(fn, {delay: 1000, repeat: true});
