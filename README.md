@@ -9,11 +9,15 @@ Build
 Build via [Packager](http://github.com/kamicane/packager), requires [MooTools Core](http://github.com/mootools/mootools-core) to be registered to Packager already
 
 	./packager register /path/to/interval
+	./packager build Interval/Interval > interval.js
+
+You can also overwrite defaults MooTools `Function::delay` and `Function::periodical` so that it uses Interval by using
+
 	./packager build Interval/* > interval.js
 
 To build this plugin without external dependencies use
 
-	./packager build Interval/* +use-only Interval > interval.js
+	./packager build Interval/Interval +use-only Interval > interval.js
 
 Demo
 ----
