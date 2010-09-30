@@ -4,7 +4,7 @@ name: Function.Interval
 description: A setTimeout wrapper that can pause and resume, with multi functions support.
 license: MIT-style license.
 authors: Djamil Legato (@w00fz)
-requires: [Interval/*]
+requires: [Interval]
 provides: Function.Interval
 ...
 */
